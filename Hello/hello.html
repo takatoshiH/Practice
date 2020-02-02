@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Vue App</title>
+</head>
+<body>
+ <div id="app">
+   <!-- {{}}をマスタッシュ構文と言う -->
+   <!-- JSの式を書くこともできる -->
+   <!-- 代入や条件分岐などの文を入れることはできない -->
+  <p>{{ localEmail() }}</p>
+ </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="hello.js"></script>
+</body>
+</html>
+
+<!-- 文字列にテンプレートを埋め込む  v-text -->
+<!-- マスタッシュ構文を無効化する v-pre -->
+<!-- 属性値にJavascript式を埋め込む　v-bind -->
+<!-- 算出プロパティーは引数をもてない -->
+<!-- 算出プロパティは既存のデータの加工を伴う取得 -->
+<!-- メソッドはデータの取得や操作、更新にも利用することができる -->
+<!-- ライフサイクル　vueインスタンスが生成されたのちに、要素にマウントされて、データ変化に応じてビューを更新させていき、最終的に破棄されるまで -->
